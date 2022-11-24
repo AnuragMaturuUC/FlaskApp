@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="box">
+    <h1>User Details</h1>
+
+    <form enctype = "multipart/form-data" action="{{ url_for('userdetails') }}" method="post">
+        <input type="text" name="firstname" placeholder="FirstName" required="required"/>
+        <input type="text" name="lastname" placeholder="LastName" required="required"/>
+<!--    <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>-->
+        <input type="email"  name="email" placeholder="Email" required="required"/>
+        <input type="file"  name="file" id="file" accept=".txt" required="required"/>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit Details.</button>
+    </form>
+</div>
+
+{% endblock %}
