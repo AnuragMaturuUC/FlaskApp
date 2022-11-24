@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 from werkzeug.utils import secure_filename
 
-UPLOAD_FOLDER = 'home/azureuser/Starting+Files+-+flask-auth-start/static/files/'
+UPLOAD_FOLDER = 'static/files/'
 ALLOWED_EXTENSIONS = {'txt'}
 
 app = Flask(__name__)
@@ -183,4 +183,5 @@ def download():
 if __name__ == "__main__":
     #app.run(host='0.0.0.0',port=8080)
     #app.run(debug = True)
-    app.run(host='0.0.0.0',port=5000)
+    #app.run(host='0.0.0.0',port=5000)
+    app.run()
